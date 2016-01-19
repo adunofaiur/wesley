@@ -4,6 +4,7 @@
 <html lang="en">
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"><title>About / Contact Us</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
@@ -18,10 +19,14 @@
 
 <body>
 <div class="pageHeader" id="header">
-		<div class="menuPlaceholder"><div class="menu" onclick="toggleSlideout(event)"><img class="menuIcon" src="./img/menu_white.png"></img></div></div>
-		<div class="headerText">Texas A&amp;M Wesley</div>
-		<div class="headerIconContainer"><img class="headerIcon" src="./img/WesleyLogo.png"></img></div>
-
+		<div class="topBar">
+			<div class="menuPlaceholder"><div class="menu" onclick="toggleSlideout(event)"><img class="menuIcon" src="./img/menu_white.png"></img></div></div>
+			<div class="headerText">Texas A&amp;M Wesley</div>
+			<div class="headerIconContainer"><img class="headerIcon" src="./img/WesleyLogo.png"></img></div>
+		</div>
+		<div class="pageLabel">
+		Contact Us
+		</div>
 	</div>
 	<div class="slideout hidden" id="slideout">
 	
@@ -33,6 +38,10 @@
 		<div class="slideoutMenuItem currentPage" navto="./contact.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel currentPage">About/Contact Us</div>
+		</div>
+		<div class="slideoutMenuItem" navto="./ministries.html" onclick="navigationHandler(event)">
+			<div class="slideoutMenuIcon"><img></img></div>
+			<div class="slideoutMenuLabel">Ministries</div>
 		</div>
 		<div class="slideoutMenuItem" navto="./events.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
@@ -58,11 +67,9 @@
 </div>
 </div>
 <div class="pageBody" id="body">
+	
 	<div class="contentBlock">
-		<div class="bannerText">Contact Us</div>
-		<div class="blockDivider"></div>
-	</div>
-	<div class="contentBlock">
+		<div class="bannerText">Address</div>
 		<div class="bodyText">
 		Physical Address: 201 Tauber St. College Station, Tx. 77840
 		<br>

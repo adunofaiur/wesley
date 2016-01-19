@@ -20,10 +20,14 @@
 <body>
 
 <div class="pageHeader" id="header">
-		<div class="menuPlaceholder"><div class="menu" onclick="toggleSlideout(event)"><img class="menuIcon" src="./img/menu_white.png"></img></div></div>
-		<div class="headerText">Texas A&amp;M Wesley</div>
-		<div class="headerIconContainer"><img class="headerIcon" src="./img/WesleyLogo.png"></img></div>
-
+		<div class="topBar">
+			<div class="menuPlaceholder"><div class="menu" onclick="toggleSlideout(event)"><img class="menuIcon" src="./img/menu_white.png"></img></div></div>
+			<div class="headerText">Texas A&amp;M Wesley</div>
+			<div class="headerIconContainer"><img class="headerIcon" src="./img/WesleyLogo.png"></img></div>
+		</div>
+		<div class="pageLabel">
+		Home Page
+		</div>
 	</div>
 	<div class="slideout hidden" id="slideout">
 	
@@ -35,6 +39,10 @@
 		<div class="slideoutMenuItem" navto="./contact.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel">About/Contact Us</div>
+		</div>
+		<div class="slideoutMenuItem" navto="./ministries.html" onclick="navigationHandler(event)">
+			<div class="slideoutMenuIcon"><img></img></div>
+			<div class="slideoutMenuLabel">Ministries</div>
 		</div>
 		<div class="slideoutMenuItem" navto="./events.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
@@ -59,12 +67,12 @@
 	</div>
 </div>
 <div class="pageBody" id="body">
+	
 	<div class="contentBlock">
 		<div class="bannerText">Howdy!</div>
 
 		<div class="bannerImageContainer"><img class="bannerImage" src="./img/outdoor_logo.jpg"></img></div>
 		<div class="bodyText">The Texas A&M Wesley Foundation is a home away from home for the students of Texas A&M University and Blinn College in the Bryan-College Station area. We are a community dedicated to growing closer to God and one another through worship, fellowship, service, and study. </div>
-			<div class="blockDivider"></div>
 
 	</div>
 	<div class="contentBlock">
