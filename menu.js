@@ -29,3 +29,17 @@ function clickToHide(event){
 		hideSlideout($("#slideout"));
 	}
 }
+
+function navigationHandler(event){
+	//find menu item that fired event
+	var menuItem = $(event.target).closest('.slideoutMenuItem');
+	//if the menu item for the current page was clicked on, do nothing
+	if(menuItem.hasClass('.currentPage')){
+		event.stopPropagation();
+	}else{
+		var navigateTo = menuItem.attr('navto');
+		window.location.href = navigateTo;
+	}
+	//else, load the correct page
+
+}

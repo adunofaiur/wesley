@@ -18,7 +18,7 @@
 
 <body>
 <div class="pageHeader" id="header">
-		<div class="menu" onclick="toggleSlideout(event)"><img class="menuIcon" src="./img/menu_white.png"></img></div>
+		<div class="menuPlaceholder"><div class="menu" onclick="toggleSlideout(event)"><img class="menuIcon" src="./img/menu_white.png"></img></div></div>
 		<div class="headerText">Texas A&amp;M Wesley</div>
 		<div class="headerIconContainer"><img class="headerIcon" src="./img/WesleyLogo.png"></img></div>
 
@@ -26,35 +26,36 @@
 	<div class="slideout hidden" id="slideout">
 	
 	<div class="slideoutMenu">
-		<div class="slideoutMenuItem">
+		<div class="slideoutMenuItem" navto="./index.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel">Home</div>
 		</div>
-		<div class="slideoutMenuItem">
+		<div class="slideoutMenuItem currentPage" navto="./contact.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel currentPage">About/Contact Us</div>
 		</div>
-		<div class="slideoutMenuItem">
+		<div class="slideoutMenuItem" navto="./events.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel">Events</div>
 		</div>
-		<div class="slideoutMenuItem">
+		<div class="slideoutMenuItem" navto="./sermons.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel">Sermons</div>
 		</div>
-		<div class="slideoutMenuItem">
+		<div class="slideoutMenuItem" navto="./pictures.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel">Pictures</div>
 		</div>
-		<div class="slideoutMenuItem">
+		<div class="slideoutMenuItem" navto="http://www.crunchtimeretreat.org/" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel">CrunchTime</div>
 		</div>
-		<div class="slideoutMenuItem">
+		<div class="slideoutMenuItem" navto="https://www.eservicepayments.com/cgi-bin/specialwebapp.vps?appid=40a27221f816144b21e9f2e0d81891b8a68820b814b79fc6caf83c6a4fcf06b22f288aa4a34fa442a76b20a4eb1041b0e85bb200704121e3446a74a24b322237" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel">Give</div>
 		</div>
 	</div>
+</div>
 </div>
 <div class="pageBody" id="body">
 	<div class="contentBlock">
@@ -73,15 +74,27 @@
 	<div class="contentBlock">
 		<div class="bannerText">Staff</div>
 		<div class="staffProfile">
-			<img class="staffPicture"></img>
+			<img class="staffPicture" src="./img/staffPhotos/Max_portrait.jpg"></img>
 			<div class="staffBiography">
 				Rev. Max Mertz is the Campus Minister (or Monster, as he prefers) at the Wesley Foundation. He serves the students not only by preaching on Sunday evenings, leading Sunday School and Men's Bible Study, and taking care of the logistics for the Foundation, but also by providing pastoral counciling, friendship, and as much teasing as a situation needs!
-				<br>
+				<br><br>
 				Email Max at: maxpmertz@gmail.com
 
 			</div>
 		</div>
+		<div class="staffProfile">
+			<img class="staffPicture" src="./img/staffPhotos/Sharon_portrait.jpg"></img>
+			<div class="staffBiography">
+				Sharon Ross is the administrative assistant and choir director at the Wesley Foundation. She oversees facility maintenance, takes care of the bookkeeping, and directs the Wesley Crossbound Choir. When she was a student at TAMU, Max was already the campus minister. "Somehow," Sharon is now older than Max....hmmmm....does not compute!
+				<br><br>
+				Email Sharon at: tamuwesley@gmail.com
+
+			</div>
+		</div>
 	</div>
+
+
+
 </div>
 
 </div>

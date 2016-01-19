@@ -20,7 +20,7 @@
 <body>
 
 <div class="pageHeader" id="header">
-		<div class="menu" onclick="toggleSlideout(event)"><img class="menuIcon" src="./img/menu_white.png"></img></div>
+		<div class="menuPlaceholder"><div class="menu" onclick="toggleSlideout(event)"><img class="menuIcon" src="./img/menu_white.png"></img></div></div>
 		<div class="headerText">Texas A&amp;M Wesley</div>
 		<div class="headerIconContainer"><img class="headerIcon" src="./img/WesleyLogo.png"></img></div>
 
@@ -28,31 +28,31 @@
 	<div class="slideout hidden" id="slideout">
 	
 	<div class="slideoutMenu">
-		<div class="slideoutMenuItem">
+		<div class="slideoutMenuItem currentPage" navto="./index.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel currentPage">Home</div>
 		</div>
-		<div class="slideoutMenuItem">
+		<div class="slideoutMenuItem" navto="./contact.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel">About/Contact Us</div>
 		</div>
-		<div class="slideoutMenuItem">
+		<div class="slideoutMenuItem" navto="./events.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel">Events</div>
 		</div>
-		<div class="slideoutMenuItem">
+		<div class="slideoutMenuItem" navto="./sermons.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel">Sermons</div>
 		</div>
-		<div class="slideoutMenuItem">
+		<div class="slideoutMenuItem" navto="./pictures.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel">Pictures</div>
 		</div>
-		<div class="slideoutMenuItem">
+		<div class="slideoutMenuItem" navto="http://www.crunchtimeretreat.org/" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel">CrunchTime</div>
 		</div>
-		<div class="slideoutMenuItem">
+		<div class="slideoutMenuItem" navto="https://www.eservicepayments.com/cgi-bin/specialwebapp.vps?appid=40a27221f816144b21e9f2e0d81891b8a68820b814b79fc6caf83c6a4fcf06b22f288aa4a34fa442a76b20a4eb1041b0e85bb200704121e3446a74a24b322237" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel">Give</div>
 		</div>
