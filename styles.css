@@ -114,7 +114,7 @@
 		
 		align-items: center;
 		width: 95%;
-		max-width: 480px;
+		max-width: 440px;
 		background-color: white;
 		box-shadow: 1px 1px 2px 2px rgba(1, 1, 1, .4);
 		padding-bottom: 8px;
@@ -131,9 +131,11 @@
 	}
 	.dayEvents{
 		list-style-type:none;
+		    flex-grow: 5;
 	}
 	.event{
-
+		display: flex;
+		justify-content: space-between;
 	}
 
 
@@ -187,8 +189,17 @@
 
 
 	.dailySchedule{
-		width: 90%;
+		display: flex;
+	    width: 95%;
+	    align-items: baseline;
+	    justify-content: space-between;
 	}
+	.dayLabel{
+		color: #727272;
+		width: 65px;
+		margin-right: 4px;
+	}
+
 	.staffProfile{
 		display: flex;
 		max-width: 90%;
@@ -218,6 +229,9 @@
 	.pageBody{
 		margin-left: 240px;
 		align-items: initial;
+		flex-direction: row;
+    	flex-wrap: wrap;
+    	width: initial;
 	}
 	.menu{
 		display: none;
@@ -227,7 +241,8 @@
 	}
 	.contentBlock{
 		width: 75%;
-		max-width: 560px;
+		max-width: 480px;
+		flex: 1 1 480px;
 	}
 
 
@@ -252,11 +267,14 @@
 
 
 
-
+ul{
+	padding: 0px;
+}
 
 body{
 	margin: 0px;
 	min-width: 320px;
+	width: 100vw;
 	font-family: Arial, sans-serif;
 }
 
