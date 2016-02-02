@@ -6,11 +6,11 @@
 	.pageBody{
 	 	width: 100%;
 		margin-top: 80px;
-		padding-top: 8px;
+		padding-top: 12px;
 		padding-bottom: 20px;
 		display: inline-flex;
 		flex-direction: column;
-		align-items: center;
+    align-items: center;
 		transition: margin-left .25s ease;
 	}
 
@@ -63,7 +63,8 @@
 	}
 	.menu:hover{
 		cursor: pointer;
-		background-color: #01579B;
+		background-color: #FFAB00;
+
 	}
 
 	.headerIcon{
@@ -99,6 +100,8 @@
 	}
 	.bannerText{
 	    font-size: 20px;
+	    border-radius: 4px 4px 0 0;
+
     text-align: center;
 	    line-height: 50px;
 	    width: 100%;
@@ -111,14 +114,13 @@
 	.contentBlock{
 		display: flex;
 		flex-direction: column;
-		
+		border-radius: 4px;
 		align-items: center;
 		width: 95%;
-		max-width: 440px;
+		max-width: 90%px;
 		background-color: white;
-		box-shadow: 1px 1px 2px 2px rgba(1, 1, 1, .4);
+		box-shadow: 0px 0px 1px 1px rgba(1, 1, 1, .4);
 		padding-bottom: 8px;
-		margin: 8px 20px 8px 20px;
 
 	}
 	.blockDivider{
@@ -198,6 +200,8 @@
 		color: #727272;
 		width: 65px;
 		margin-right: 4px;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	.staffProfile{
@@ -214,9 +218,28 @@
 	.staffBiography{
 
 	}
+	.bannerText.navigation{
+		background-color: #3F51B5;
+	}
+	.sermonsForDay{
+		width: 95%;
+		margin-bottom: 20px;
+	    display: flex;
+	    justify-content: space-between;
+	}
+	.sermonLinks{
+		margin-left: 20px;
+		padding-right: 12px;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: flex-end;
+    white-space: nowrap;
+    flex-basis: content;
 
-
-
+	}
+	.sermonLabel{
+		color: #727272;
+	}
 
 
 @media (min-width: 820px){
@@ -227,11 +250,6 @@
 		margin-left: 0px;
 	}
 	.pageBody{
-		margin-left: 240px;
-		align-items: initial;
-		flex-direction: row;
-    	flex-wrap: wrap;
-    	width: initial;
 	}
 	.menu{
 		display: none;
@@ -240,15 +258,29 @@
 		width: 50px;
 	}
 	.contentBlock{
-		width: 75%;
-		max-width: 480px;
-		flex: 1 1 480px;
+		max-width: 70%;
+		margin-left: 268px;
+		margin-right: 32px;
+
 	}
 
 
 }
 
+.googleDoc{
+	   border: none;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+     width: 100%;
 
+}
+.docContainer{
+	width: 95%;
+}
+.contentBlock.calendar{
+	width: 80%;
+}
 @media (min-width: 1020px){
 
 	.contentBlock{
@@ -274,7 +306,6 @@ ul{
 body{
 	margin: 0px;
 	min-width: 320px;
-	width: 100vw;
 	font-family: Arial, sans-serif;
 }
 

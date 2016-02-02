@@ -22,19 +22,19 @@
 <div class="pageHeader" id="header">
 		<div class="topBar">
 			<div class="menuPlaceholder"><div class="menu" onclick="toggleSlideout(event)"><img class="menuIcon" src="./img/menu_white.png"></img></div></div>
-			<div class="headerText">Texas A&amp;M Wesley</div>
+			<div class="headerText">Texas A&M Methodist Student Ministry </div>
 			<div class="headerIconContainer"><img class="headerIcon" src="./img/WesleyLogo.png"></img></div>
 		</div>
 		<div class="pageLabel">
-		Pictures
+		Calendar
 		</div>
 	</div>
 	<div class="slideout hidden" id="slideout">
 	
 	<div class="slideoutMenu">
-		<div class="slideoutMenuItem currentPage" navto="./index.html" onclick="navigationHandler(event)">
+		<div class="slideoutMenuItem" navto="./index.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
-			<div class="slideoutMenuLabel currentPage">Home</div>
+			<div class="slideoutMenuLabel">Home</div>
 		</div>
 		<div class="slideoutMenuItem" navto="./contact.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
@@ -46,15 +46,16 @@
 		</div>
 		<div class="slideoutMenuItem" navto="./events.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
-			<div class="slideoutMenuLabel">Events</div>
+			<div class="slideoutMenuLabel">Event Flyer</div>
 		</div>
+		<div class="slideoutMenuItem currentPage" navto="./calendar.html" onclick="navigationHandler(event)">
+			<div class="slideoutMenuIcon"><img></img></div>
+			<div class="slideoutMenuLabel currentPage">Calendar</div>
+		</div>
+
 		<div class="slideoutMenuItem" navto="./sermons.html" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
 			<div class="slideoutMenuLabel">Sermons</div>
-		</div>
-		<div class="slideoutMenuItem currentPage" navto="./pictures.html" onclick="navigationHandler(event)">
-			<div class="slideoutMenuIcon"><img></img></div>
-			<div class="slideoutMenuLabel currentPage">Pictures</div>
 		</div>
 		<div class="slideoutMenuItem" navto="http://www.crunchtimeretreat.org/" onclick="navigationHandler(event)">
 			<div class="slideoutMenuIcon"><img></img></div>
@@ -69,48 +70,12 @@
 <div class="pageBody" id="body">
 	
 	<div class="contentBlock">
-		<div class="bannerText">Howdy!</div>
+		<div class="docContainer">
 
-		<div class="bannerImageContainer"><img class="bannerImage" src="./img/outdoor_logo.JPG"></img></div>
-		<div class="bodyText">The Texas A&M Wesley Foundation is a home away from home for the students of Texas A&M University and Blinn College in the Bryan-College Station area. We are a community dedicated to growing closer to God and one another through worship, fellowship, service, and study. </div>
-
-	</div>
-	<div class="contentBlock">
-		
-		<div class="bannerText">Worship</div>
-		<div class="bodyText">We have dinner and worship every Sunday and Wednesday evening, allowing us to move from a time of food and fellowship directly into a time of worship. Dinner begins at 6:00 PM and worship begins at 7:00 PM both days.</div>
-		<div class="bannerImageContainer"><img class="bannerImage" src="./img/worship.JPG"></img></div>
-	</div>
-
-	<div class="contentBlock">
-		<div class="bannerText">A Week at Wesley</div>
-		<div class="dailySchedule">
-			<div class="dayLabel">Sunday</div>
-			<ul class="dayEvents">
-				<li class="event">Sunday School, 9:30 AM</li>
-				<li class="event">Choir, 4:45 PM</li>
-				<li class="event">Dinner, 6:00 PM</li>
-				<li class="event">Worship, 7:00 PM</li>
-				<li class="event">Post-worship Cookies, 8:00 PM</li>
-
-			</ul>
-
-			<div class="dayLabel">Monday</div>
-			<ul class="dayEvents">
-				<li class="event">Lunch Bible Study, 12:30 PM</li>
-				<li class="event">Supper Club, 5:15 PM</li>
-				<li class="event">Men's and Women's Bible Studies, 8:00 PM</li>
-			
-			</ul>
-
-			<div class="dayLabel">Tuesday</div>
-			<ul class="dayEvents">
-				<li class="event">Lunch Bible, 12:30 - 1:30 PM</li>
-				
-
-			</ul>
+			<iframe class="googleDoc" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=irs8fpqe7rei22b7sk0rv9o7l4%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FChicago" style="border-width:0; padding-left: 2.5%; padding-right: 2.5% " height="700" frameborder="0" scrolling="no"></iframe>
 		</div>
 	</div>
+	
 
 
 </div>
